@@ -1,0 +1,23 @@
+[project]
+name = "test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdiqani Abdullahi", email = "abdiqaniabdullahi@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "inspect-ai>=0.3.268",
+    "inspect-evals[agentdojo]>=0.22.0",
+    "ipykernel>=7.3.0",
+    "openai>=3.19.2",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+test = "test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
